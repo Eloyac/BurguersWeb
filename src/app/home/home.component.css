@@ -1,0 +1,95 @@
+ul {
+  display: flex;
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li a {
+  height: 20rem;
+  width: 20rem;
+  border: 1px solid whitesmoke;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #000000;
+
+}
+
+li a:hover {
+  opacity: 0.9;
+}
+
+
+.content {
+
+  padding: .5rem 1rem;
+  position: relative;
+
+}
+
+.favorite {
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+  font-size: 1-2rem;
+  color: #e72929;
+}
+
+.favorite.not {
+  color: grey;
+
+}
+
+.stars {
+
+  margin-bottom: 0.2rem;
+
+}
+
+.product-item-footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.origins{
+  flex: 9;
+}
+
+.origins span{
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+  background-color: whitesmoke;
+  display: inline-block;
+  font-size: .8rem;
+  color: grey;
+  margin-right: .3rem;
+}
+
+
+.cook-time{
+  font-size: .8rem;
+  flex: 3;
+  text-align: right;
+}
+
+
+.price{
+    color: 414141;
+    margin-top: .7rem;
+}

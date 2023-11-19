@@ -1,0 +1,32 @@
+<div class="container">
+  <ul>
+    <li *ngFor="let item of cart.items">
+      <div>
+        <img [src]="item.food.imgUrl" [alt]="item.food.name" />
+      </div>
+      <div>
+        <a routerLink="/food/{{ item.food.id }}">
+          {{ item.food.name }}
+        </a>
+      </div>
+
+      <div>
+        <button class="add-button" (click)="changeQuantity(item)"> ➕ </button>
+      </div>
+      <div>
+        {{ item.price | currency }}
+      </div>
+      <div>
+        <button class="remove-button" (click)="removeFromCart(item)">
+          Remove
+        </button>
+      </div>
+    </li>
+  </ul>
+
+  <div class="checkout">
+    <div>
+      <div class="foods-price">{{ cart.totalPrice | currency }}</div>
+    </div>
+  </div>
+</div>
